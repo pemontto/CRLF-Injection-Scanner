@@ -43,7 +43,7 @@ class CrlfScan():
                 session = requests.Session()
                 with eventlet.Timeout(TIMEOUT):
                     try:
-                        session.get(crlf_url)
+                        session.get(crlf_url,verify=False)
                         print(colored(crlf_url, 'magenta'))
                     except:
                         print(colored("Error: %s" % crlf_url, 'red'))
