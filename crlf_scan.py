@@ -11,6 +11,9 @@ import sys, getopt
 import requests
 import eventlet
 from termcolor import colored
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 eventlet.monkey_patch()
 
 # List of web protocols.
