@@ -4,6 +4,10 @@
 # Author: Michael Stott
 # Date: 11/11/17
 #
+# Edited by Random_Robbie 
+#
+# Ignore bad SSL and added Openvpn Payload.
+#
 # Command line tool for scanning urls for CRLF injection.
 '''
 
