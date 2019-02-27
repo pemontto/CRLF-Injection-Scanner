@@ -1,3 +1,4 @@
 colored
 eventlet
 requests
+termcolor
